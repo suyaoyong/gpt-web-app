@@ -1,19 +1,32 @@
 {
   "name": "gpt-web-app",
   "version": "1.0.0",
-  "description": "my first application",
+  "description": "my first application for web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start-frontend": "cd frontend && npm start",
+    "start-backend": "cd backend && node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/suyaoyong/gpt-web-app.git"
   },
-  "author": "suyaoyogn",
-  "license": "MIT ",
+  "author": "suyaoyong",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/suyaoyong/gpt-web-app/issues"
   },
-  "homepage": "https://github.com/suyaoyong/gpt-web-app#readme"
+  "homepage": "https://github.com/suyaoyong/gpt-web-app#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
 }
