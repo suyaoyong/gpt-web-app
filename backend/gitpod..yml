@@ -1,0 +1,6 @@
+# 定义该项目要暴露的端口号
+ports:
+  - port: 3001
+    onOpen: open-preview
+    name: first test Website
+    description: Website Preview

@@ -1,9 +1,0 @@
-# 定义该项目要暴露的端口号
-#tasks:
- # - command: npm start
-  #  ports: 53332
-
-     
-
-
- 
